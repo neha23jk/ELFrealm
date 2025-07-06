@@ -27,13 +27,15 @@ git clone https://github.com/neha23jk/ELFrealm.git
 cd ELFrealm
 # Open index.html in your browser
 ```
-##🧙‍♀️ Inspiration
+## 🧙‍♀️ Inspiration
+
 This site was inspired by the elegance and mysticism of elvish lore in fantasy literature, movies, and games like The Lord of the Rings and Skyrim.
 
-##📄 License
+## 📄 License
+
 Apache 2.0 License
 
-##🌟 Made with magic by Neha Chaudhary
+## 🌟 Made with magic by Neha Chaudhary
 
 ## 🖼️ Screenshots
 
