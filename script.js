@@ -42,8 +42,8 @@ window.addEventListener("load", () => {
   const scrollCue = document.getElementById("scroll-cue");
 
   let count = 1;
-  const duration = 4000; // 4 seconds total
-  const intervalTime = duration / 100; // time per count = 40ms
+  const duration = 4000; 
+  const intervalTime = duration / 100; 
 
   const counterInterval = setInterval(() => {
     counter.textContent = `${count}%`;
@@ -51,24 +51,13 @@ window.addEventListener("load", () => {
     if (count > 100) clearInterval(counterInterval);
   }, intervalTime);
 
-  // Force 4-second loader duration
   setTimeout(() => {
     loader.classList.add("fade-out");
 
     setTimeout(() => {
       loader.style.display = "none";
       mainContent.style.display = "block";
-
-      // Show scroll cue
-      scrollCue.classList.add("visible");
-
-      // Hide after 4 seconds
-      setTimeout(() => {
-        scrollCue.classList.remove("visible");
-        scrollCue.classList.add("hide");
-      }, 750);
-
-    }, 600); // delay for fade transition
+    }, 600); 
   }, duration);
 });
 
@@ -340,7 +329,6 @@ function files(index) {
   return data.split("\n")[index];
 }
 window.addEventListener("resize", () => {
-  // maybe reload images
   console.log("New frame source:", files(0));
 });
 
@@ -401,7 +389,6 @@ function scaleImage(img, ctx) {
 ScrollTrigger.create({
   trigger: "#page>canvas",
   pin: true,
-  // markers:true,
   scroller: `#main`,
   start: `top top`,
   end: `600% top`,
